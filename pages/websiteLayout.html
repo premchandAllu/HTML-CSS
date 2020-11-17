@@ -1,0 +1,107 @@
+<!doctype html>
+<title>Website Layout</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .outer-col-1 {
+        background: rgb(201, 44, 70);
+        flex: 1;
+        font-weight: bold;
+    }
+
+    .outer-col-2 {
+        display: flex;
+        background: rgb(99, 36, 13);
+        flex-direction: column;
+        flex: 5;
+    }
+
+    article {
+        padding: 10px;
+        margin: 10px;
+        background: rgb(235, 182, 77);
+    }
+
+    .inner-row {
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+    }
+
+    .inner-col {
+        flex: 4;
+    }
+
+    .inner-row article {
+        min-height: 20vh;
+    }
+
+    .inner-row aside {
+        background: rgb(233, 66, 94);
+        flex: 1;
+    }
+
+    header,
+    footer {
+        background: lightblue;
+        height: 20vh;
+        font-weight: bold;
+    }
+
+    header,
+    footer,
+    article,
+    nav,
+    aside {
+        padding: 1em;
+    }
+</style>
+
+<body>
+    <nav class="outer-col-1">Nav</nav>
+    <div class="outer-col-2">
+        <header>Header</header>
+        <div class="inner-row">
+            <div class="inner-col">
+                <article>
+                    <h2>First article</h2>
+                    <p>Cricket is a game of class, character and commitment. 
+                        It not only requires years of practice but also 
+                        passion and dedication. Originally played in Britain, 
+                        this sport has spread worldwide and made a remarkable 
+                        impact on the lives of people.
+                    </p>
+                </article>
+                <article>
+                    <h2>Second article</h2>
+                    <p>Cricket is a game of class, character and commitment. 
+                        It not only requires years of practice but also 
+                        passion and dedication. Originally played in Britain, 
+                        this sport has spread worldwide and made a remarkable 
+                        impact on the lives of people.
+                    </p>
+                </article>
+                <article>
+                    <h2>Third article</h2>
+                    <p>Cricket is a game of class, character and commitment. 
+                        It not only requires years of practice but also 
+                        passion and dedication. Originally played in Britain, 
+                        this sport has spread worldwide and made a remarkable 
+                        impact on the lives of people.
+                    </p>
+                </article>
+                <footer>Footer</footer>
+            </div>
+            <aside>Aside</aside>
+        </div>
+    </div>
+</body>
